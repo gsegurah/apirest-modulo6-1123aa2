@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const vehiculos = require('../models/vehiculos'); // importo el modelo
+const Vehiculo = require('../models/vehiculos'); // importo el modelo
 
 router.get('/', async (req, res) => { // llamar toda los pots de la base de datos
     try {

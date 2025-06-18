@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 const postRoute=require('./routes/vehiculos.rutas');
-app.use('/serviciosVehiculos', vehiculosRoute);
+app.use('/serviciosVehiculos', postRoute);
 mongoose.connect('mongodb+srv://gseguraher:usNrHo15g1mbHBGM@cluster0.jicfvuv.mongodb.net/?retryWrites=true&w=majority&appName=cluster0',
 {
     useNewUrlParser:true,
