@@ -4,7 +4,7 @@
   "description": "Esta es una apirest con node, express, cors, morgan, MongoDB y mongoose",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
