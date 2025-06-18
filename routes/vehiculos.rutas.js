@@ -32,7 +32,7 @@ router.post('/', async (req, res) => { // crear un post
         res.json({ message: err.message });
     }
 });
-router.patch('/:postId', async (req, res) => { // actualizar un post
+router.patch('/:vehiculosId', async (req, res) => { // actualizar un post
     try {
         const updatedvehiculos = await vehiculos.updateOne(
             { _id: req.params.vehiculosId }, { $set: { placa: req.body.placa,
