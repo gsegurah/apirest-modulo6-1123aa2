@@ -8,10 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "apirest-modulo6-1123aa2"
+    "url": "https://github.com/gsegurah/apirest-modulo6-1123aa2.git"
   },
   "author": "Giovanni Segura Hernandez",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gsegurah/apirest-modulo6-1123aa2/issues"
+  },
+  "homepage": "https://github.com/gsegurah/apirest-modulo6-1123aa2#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
