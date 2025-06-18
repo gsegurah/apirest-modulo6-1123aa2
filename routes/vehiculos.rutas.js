@@ -19,7 +19,7 @@ router.get('/:vehiculosId', async (req, res) => {
     }
 });
 router.post('/', async (req, res) => { // crear un post
-     const post= new vehiculos({
+     const vehiculos= new vehiculos({
         placa: req.body.placa,
         marca: req.body.marca,
         linea: req.body.linea,
