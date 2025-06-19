@@ -49,8 +49,8 @@ router.patch('/:postId', async (req, res) => { // actualizar un post
 router.delete('/:postId', async (req, res) => { // eliminar un post
     try {
         const removedVehiculos = await Vehiculos.findByIdAndDelete(req.params.postId);
-        if(!removedPost){
-            return res.status(404).json({ message: 'Post no encontrado' });
+        if(!removedVehiculos){
+            return res.status(404).json({ message: 'Vehiculo no encontrado' });
         }
     } catch (err) {
         res.status(500).json({ message: "Error de conexion" });
