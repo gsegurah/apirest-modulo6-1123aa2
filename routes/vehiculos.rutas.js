@@ -55,6 +55,4 @@ router.delete('/:postId', async (req, res) => { // eliminar un post
         res.status(500).json({ message: "Error de conexion" });
     }
 });
-
-
 module.exports=router; // exporto el router
