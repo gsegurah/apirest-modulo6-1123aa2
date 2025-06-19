@@ -35,7 +35,7 @@ router.post('/', async (req, res) => { // crear un post
 router.patch('/:postId', async (req, res) => { // actualizar un post
     try {
         const updatedPost = await Vehiculos.updateOne(
-            { _id: req.params.postId }, { $set: { title:   placa: req.body.placa,
+            { _id: req.params.postId }, { $set: { placa: req.body.placa,
   marca: req.body.marca,
   linea: req.body.linea,
   modelo: req.body.modelo
