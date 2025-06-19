@@ -26,15 +26,15 @@ router.post('/', async (req, res) => { // crear un post
   modelo: req.body.modelo
      });
         try {
-        const savedPost= await post.save();
-        res.json(savedPost);
+        const savedVehiculos= await post.save();
+        res.json(savedVehiculos);
     } catch (err) {
         res.json({ message: err.message });
     }
 });
 router.patch('/:postId', async (req, res) => { // actualizar un post
     try {
-        const updatedPost = await Vehiculos.updateOne(
+        const updatedVehiculos = await Vehiculos.updateOne(
             { _id: req.params.postId }, { $set: { 
   placa: req.body.placa,
   marca: req.body.marca,
